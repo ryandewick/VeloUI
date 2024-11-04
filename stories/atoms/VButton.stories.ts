@@ -10,7 +10,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VButton v-bind="args" />',
+  template: '<v-button v-bind="args">Click here</v-button>',
 });
 
 export const Default = Template.bind({});

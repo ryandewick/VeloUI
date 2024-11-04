@@ -2,7 +2,9 @@
   "name": "velo-ui",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "description": "A Vue 3 component library",
+  "author": "ryandewick",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
@@ -10,7 +12,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "create-component": "node create-component.cjs",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "files": [
     "packages",
@@ -18,8 +20,6 @@
     "package.json"
   ],
   "dependencies": {
-    "path": "~0.12.7",
-    "sass": "~1.80.6",
     "vue": "^3.5.12"
   },
   "devDependencies": {
@@ -36,6 +36,7 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "@vue/test-utils": "~2.4.6",
     "jsdom": "~25.0.1",
+    "sass": "~1.80.6",
     "storybook": "~8.4.1",
     "typescript": "~5.6.2",
     "vite": "^5.4.10",
